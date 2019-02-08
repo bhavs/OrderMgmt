@@ -1,4 +1,4 @@
-package com.example.OrderMgmt.controller;
+package com.example.OrderMgmt.helper;
 
 public class CustomerHelperClass {
 }

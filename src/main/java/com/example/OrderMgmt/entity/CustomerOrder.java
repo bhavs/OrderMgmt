@@ -24,15 +24,29 @@ public class CustomerOrder {
 
     }
 
-    public CustomerOrder(long discountValue, long totalValue) {
-        this.discountValue = discountValue;
+    public CustomerOrder(long totalValue) {
         this.totalValue = totalValue;
+    }
+
+    public long getDiscountValue() {
+        return discountValue;
+    }
+
+    public long getTotalValue() {
+        return totalValue;
+    }
+
+    public Customer getCustomer() {
+        return customer;
     }
 
     public void setDiscountValue(long discountValue) {
         this.discountValue = discountValue;
     }
 
+    public void setTotalValue(long totalValue) {
+        this.totalValue = totalValue;
+    }
 
     public void setCustomer(Customer customer) {
         this.customer = customer;

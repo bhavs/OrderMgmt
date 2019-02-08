@@ -12,8 +12,9 @@ import java.util.*;
 
 public interface CustomerRepository extends CrudRepository<Customer, Long> {
 
-    List<String> findByCustomerID(long custID);
+    Customer findByCustomerID(long custID);
     List<Customer> findByType(CustomerType type);
     int findByNumberOfOrders(long custID);
+    Customer findByName(String name);
 
 }

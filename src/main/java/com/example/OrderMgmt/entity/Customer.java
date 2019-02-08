@@ -54,4 +54,34 @@ public class Customer {
     public void setNumberOfOrders(int numberOfOrders) {
         this.numberOfOrders = numberOfOrders;
     }
+
+
+    public long getCustomerID() {
+        return customerID;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public CustomerType getType() {
+        return type;
+    }
+
+    public long getTotalDiscount() {
+        return totalDiscount;
+    }
+
+    public int getNumberOfOrders() {
+        return numberOfOrders;
+    }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "customerID=" + customerID +
+                ", name='" + name + '\'' +
+                ", type=" + type +
+                '}';
+    }
 }
